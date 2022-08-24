@@ -23,8 +23,6 @@ function App() {
     setLoading(false);
   }, [resetToggle]);
 
-  console.log(quizQuestions);
-
   function getQuestions(unfilteredArray) {
     return unfilteredArray.map((q) => {
       const choices = q.incorrect_answers.map((item) => ({
